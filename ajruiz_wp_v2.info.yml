@@ -1,0 +1,25 @@
+name: 'AJ Ruiz WP v2'
+type: theme
+base theme: stable9
+description: Custom theme for AJ Ruiz.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+libraries:
+  - ajruiz_wp_v2/global
+regions:
+  logo: Logo
+  social: Social
+  primary_menu: 'Primary menu'
+  hero: Hero
+  highlighted: Highlighted
+  content_above: 'Content Above'
+  content: Content
+  content_below: 'Content Below'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+
+ckeditor_stylesheets:
+  - css/styles.css
+  # - css/ckeditor.css

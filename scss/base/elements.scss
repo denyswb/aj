@@ -1,0 +1,111 @@
+//! div criada para exibir o tamanho da tela via javascript
+#tamanho {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    z-index: 999;
+
+    span {
+        display: inline-block;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        border-radius: 4px;
+        backdrop-filter: blur(2px);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        text-shadow: -1px -1px 0 rgba(255, 255, 255, 1), 0 -1px 0 rgba(255, 255, 255, 1),
+            1px -1px 0 rgba(255, 255, 255, 1), 1px 0 0 rgba(255, 255, 255, 1), 1px 1px 0 rgba(255, 255, 255, 1),
+            0 1px 0 rgba(255, 255, 255, 1), -1px 1px 0 rgba(255, 255, 255, 1), -1px 0 0 rgba(255, 255, 255, 1);
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell,
+        Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.layout-container {
+    header.main-header {
+        display: grid;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+          "LOGO      SOCIAL"
+          "LOGO      HAMBURGER"
+          "MENU      MENU";
+
+        &::before {
+            content: " ";
+            display: block;
+            height: 120px;
+            width: 100%;
+            background: #fff;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        #block-ajruiz-wp-v2-logo {
+            grid-area: LOGO;
+
+            div {
+                padding: 20px 10px;
+                img {
+                    height: 76px;
+                    width: auto;
+                }
+            }
+        }
+        #block-ajruiz-wp-v2-social {
+            grid-area: SOCIAL;
+            justify-self: end;
+            margin: 10px;
+        }
+        #btn-main-menu {
+            grid-area: HAMBURGER;
+        }
+        label[for="btn-main-menu"] {
+            grid-area: HAMBURGER;
+        }
+        nav#block-mainnavigation-3 {
+            grid-area: MENU;
+        }
+    }
+    header.main-header + * {
+        border: 1px solid #000;
+        padding-top: 120px;
+    }
+
+
+    .region-hero {
+    }
+
+    .region-highlighted {
+    }
+
+    main {
+    }
+
+    footer {
+    }
+}

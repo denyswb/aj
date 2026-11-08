@@ -1,0 +1,24 @@
+//! CSS variables
+:root {
+    --ciano-1: #354d66;
+    --ciano-2: #2b3e50;
+
+    --margin-1: 30px;
+    --margin-2: 60px;
+
+    --margins-1: 60px 30px;
+    --margins-2: 120px 60px;
+
+    --padding-1: 30px;
+    --padding-2: 60px;
+    
+    --paddings-1: 60px 30px;
+    --paddings-2: 120px 60px;
+}
+
+//! SCSS variables
+$ciano-1: #354d66;
+$margin-1: 30px;
+$margins-1: 60px 30px;
+$padding-1: 30px;
+$paddings-1: 60px 30px;

@@ -1,0 +1,128 @@
+.webform form {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    label {
+        display: block;
+        margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        &:focus-visible {
+            border: transparent;
+            outline: 2px solid var(--ciano-1);
+        }
+    }
+
+    .radios--wrapper, .checkboxes--wrapper {
+        border: 1px solid #ccc;
+        background:#fff;
+        padding: 10px;
+        border-radius: 6px;
+            .fieldset-wrapper {
+                input.form-radio, label {
+                    display: inline;
+                }
+                label {
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }
+    > div {
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+        }
+        .js-form-type-webform-document-file {
+            margin-bottom: 30px;
+            .description {
+                font-style: italic;
+                font-size: 14px;
+                color: rgba(0,0,0,0.5);
+            }
+        }
+        .description {
+            font-size: 14px;
+            color: #777;
+            font-style: italic;
+            font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            margin-bottom: 20px;
+        }
+        
+    }
+    fieldset.checkboxes--wrapper {
+        margin-bottom: 30px;
+        legend {
+            margin-bottom: 10px;
+            &::after {
+                content: ":";
+                position: relative;
+                left: -4px;
+            }
+        }
+        .fieldset-wrapper div div input.form-checkbox + label {
+           display: inline;
+           position: relative;
+           top: -1.5px;
+        }
+    }
+    .form-actions {
+        text-align: right;
+    }
+}
+
+//! Contato
+.webform > div {
+    > h3 {
+        text-align: center;
+    }
+    > h3 + p {
+        text-align: center;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+//* Arquivos em Envios de documentos.
+.file-container {
+    > div .form-item .webform-document-file {
+        .form-item {
+            margin: 5px 0;
+            label {
+                display: inline;
+                font-style: italic;
+                font-weight: 100;
+                color: #525252;
+            }
+        }
+    }
+}
+
+//* Arquivos em Solicitações de PPP.
+.file-container {
+    > div .form-item .form-managed-file {
+        .form-item {
+            margin: 5px 0;
+            label {
+                display: inline;
+                font-style: italic;
+                font-weight: 100;
+                color: #525252;
+            }
+        }
+    }
+}
+
+//* Asterísco
+label.form-required::after {
+    content: "*";
+    
+}

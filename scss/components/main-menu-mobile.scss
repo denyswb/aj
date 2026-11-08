@@ -1,0 +1,126 @@
+//! 👇 <input checkbox>
+#btn-main-menu {
+    display: none;
+    grid-area: BTN-MENU;
+
+    //&:checked+label+#block-mainnavigation-3 {}
+    &:checked+label span {
+        background-color: rgba(255, 255, 255, 0);
+
+        &::before {
+            bottom: 0;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            top: -3px;
+            transform: rotate(-135deg);
+        }
+    }
+
+    &:checked+label+nav {
+        min-height: calc(100vh - 64px);
+    }
+}
+
+//! Label as burguer button
+label[for=btn-main-menu] {
+    align-items: center;
+    background-color: #eee;
+    display: flex;
+    grid-area: BTN-MENU;
+    height: 64px;
+    justify-content: center;
+    justify-self: end;
+    width: 64px;
+
+    span {
+        background-color: black;
+        display: block;
+        height: 3px;
+        position: relative;
+        transition: 0.25s ease-in-out;
+        width: 40px;
+
+        &::before,
+        &::after {
+            background-color: black;
+            content: "";
+            display: block;
+            height: 3px;
+            position: relative;
+            transition: 0.25s ease-in-out;
+            width: 40px;
+        }
+
+        &::before {
+            bottom: 12px;
+        }
+
+        &::after {
+            top: 9px;
+        }
+    }
+}
+
+//! 👇 <nav>
+#block-mainnavigation-3 {
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, .75);
+    grid-area: NAV;
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.menu-level-1 {
+
+        li.level-1 {
+
+            a.menu-link-level-1,
+            a.menu-link-level-1:link,
+            a.menu-link-level-1:active,
+            a.menu-link-level-1:hover,
+            a.menu-link-level-1:visited {
+                border-bottom: 1px dotted rgba(0, 0, 0, .3);
+                color: black;
+                display: block;
+                font-weight: bold;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            ul.menu-level-2 {
+
+                li.level-2 {
+
+                    a.menu-link-level-2,
+                    a.menu-link-level-2:link,
+                    a.menu-link-level-2:active,
+                    a.menu-link-level-2:hover,
+                    a.menu-link-level-2:visited {
+                        border-bottom: 1px dotted rgba(0, 0, 0, .3);
+                        color: black;
+                        display: block;
+                        font-weight: bold;
+                        padding: 10px;
+                        text-align: center;
+                        text-decoration: none;
+                        white-space: nowrap;
+                    }
+
+                    a:hover {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}

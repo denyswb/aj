@@ -1,0 +1,175 @@
+.bachion-card {
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  .layout__region--second {
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    place-items: center;
+    height: 100%;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    a {
+      font-weight: bold;
+      background-color: var(--ciano-1);
+      padding: 5px 10px;
+      color: white;
+      border-radius: 4px;
+    }
+  }
+}
+
+.bachion-image-left-text-right {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .group-left {
+    float: none;
+    width: auto;
+    .photo {
+      text-align: center;
+      img {
+        height: 335px;
+        width: auto;
+        display: block;
+      }
+    }
+  }
+  .group-right {
+    float: none;
+    width: auto;
+    background-color: white;
+    padding: var(--padding-1);
+    > div h3:first-child {
+      margin-top: 0;
+    }
+    > div p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bachion-image-with-caption-text {
+  margin-bottom: var(--margin-2);
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--padding-1);
+  }
+
+  .group-left {
+    float: none;
+    width: auto;
+
+    .photo {
+      img {
+        border: 10px solid white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    p:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .group-right {
+    float: none;
+    width: auto;
+  }
+}
+
+.bachion-subtitle {
+  padding: 0 var(--padding-1);
+  text-align: center;
+  margin-top: var(--margin-2);
+  margin-bottom: var(--margin-1);
+
+  h2 {
+    margin: 0;
+  }
+}
+
+//! PDFs pendurados em processos
+.paragraph--type--a11y-paragraphs-tab-content > div > p > a {
+  display: inline-block;
+  color: #364db7;
+  font-weight: bold;
+  background-image: url(../images/pdf-icon-gray.svg);
+  background-repeat: no-repeat;
+  //background-size: 31px 41px;
+  background-size: 26px 35px;
+  background-position: center left;
+  padding: 11px 10px 9px 40px;
+  margin-bottom: 8px;
+}
+.paragraph--type--a11y-paragraphs-tab-content {
+  span.file {
+    a {
+      display: inline-block;
+  color: #364db7;
+  font-weight: bold;
+  background-image: url(../images/pdf-icon-v3.svg);
+  background-repeat: no-repeat;
+  //background-size: 31px 41px;
+  background-size: 26px 35px;
+  background-position: center left;
+  padding: 11px 10px 9px 40px;
+  margin-bottom: 8px;
+  background-color: unset;
+  
+    }
+  }
+}
+
+//! Abas de processos
+
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected,
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected:hover,
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected:focus {
+  border-radius: 15px 15px 0 0;
+}
+@media (min-width: 768px) {
+  .a11y-paragraphs-tabs__wrapper .tabs-allowed .tabs-panel {
+    border-top: 2px solid #eee;
+    background-color: #ededed;
+    padding: 0 10px 4px 10px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+}
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected,
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected:hover,
+.a11y-paragraphs-tabs__wrapper .tabs-trigger.is-selected:focus {
+  border: 1px solid rgb(200, 200, 200);
+  border-bottom: none;
+  color: #000;
+  background-color: #ededed;
+}
+.a11y-paragraphs-tabs__wrapper .tabs-trigger {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .a11y-paragraphs-tabs__wrapper .tabs-allowed .tabs-tab-list {
+    margin-bottom: -1px;
+  }
+}

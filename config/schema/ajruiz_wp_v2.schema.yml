@@ -1,0 +1,8 @@
+# Schema for the configuration files of the ajruiz_wp_v2 theme.
+ajruiz_wp_v2.settings:
+  type: theme_settings
+  label: 'ajruiz_wp_v2 settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

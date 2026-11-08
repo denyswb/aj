@@ -1,0 +1,29 @@
+.slide__constrained {
+    padding-top: 20px;
+    
+}
+.slick--skin--fullwidth .slide__title {
+    font-size: 2rem;
+}
+
+
+.slick-dots {
+    display: none !important;
+    bottom: 7px;
+}
+.slide__constrained {
+    padding-top: 0;
+    display: grid;
+    place-content: center;
+    .slide__caption {
+        text-align: center;
+        @media screen and (min-width: 1024px) {
+            color: white;
+            position: relative;
+            top: 5px;
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}

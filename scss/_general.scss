@@ -1,0 +1,150 @@
+//* GERAL
+
+//! div criada para exibir o tamanho da tela via javascript
+#tamanho {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    z-index: 999;
+
+    span {
+        display: inline-block;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        border-radius: 4px;
+        backdrop-filter: blur(2px);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        text-shadow: -1px -1px 0 rgba(255, 255, 255, 1), 0 -1px 0 rgba(255, 255, 255, 1),
+            1px -1px 0 rgba(255, 255, 255, 1), 1px 0 0 rgba(255, 255, 255, 1), 1px 1px 0 rgba(255, 255, 255, 1),
+            0 1px 0 rgba(255, 255, 255, 1), -1px 1px 0 rgba(255, 255, 255, 1), -1px 0 0 rgba(255, 255, 255, 1);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell,
+        Ubuntu, roboto, noto, arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    //width: auto;
+}
+p {
+    @media (min-width: 414px) {
+        text-align: justify;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+body.toolbar-fixed .layout-container header.main-header {
+    position: relative;
+}
+
+.region-hero {
+}
+
+.region-highlighted {
+}
+
+main {
+}
+
+footer {
+}
+
+//* cookies
+.eu-cookie-compliance-message {
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        a.politica {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+.eu-cookie-compliance-banner {
+    padding: 10px 0 10px 0;
+}
+.disagree-button.eu-cookie-compliance-more-button,
+.eu-cookie-compliance-agree-button,
+.eu-cookie-compliance-default-button,
+.eu-cookie-compliance-hide-button,
+.eu-cookie-compliance-more-button-thank-you,
+.eu-cookie-withdraw-button,
+.eu-cookie-compliance-save-preferences-button {
+    font-weight: bold;
+    background-color: white !important;
+    padding: 5px 10px;
+    color: black !important;
+    border-radius: 4px;
+}
+
+#aviso-fim-de-ano {
+    text-align: center;
+    padding: 15px;
+    background-position: top center;
+    background-size: cover;
+    background-image: url("/themes/custom/ajruiz_wp_v2/images/fireworks.webp");
+}

@@ -3,8 +3,7 @@ type: theme
 base theme: stable9
 description: Custom theme for AJ Ruiz.
 package: Custom
-core: 8.x
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^10 || ^11
 libraries:
   - ajruiz_wp_v2/global
 regions:
